@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 
 # Compile the TypeScript
-RUN npx tsc
+RUN npx tsc --project ./tsconfig.json
 
 # Expose the port
 EXPOSE 3000
